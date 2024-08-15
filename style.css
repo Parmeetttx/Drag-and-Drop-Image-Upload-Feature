@@ -1,0 +1,63 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+  background-color: #000000e0;
+}
+
+label{
+  display: block;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1rem;
+  text-align: center;
+  font-family: fantasy;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.dragBox{
+  width: 250px;
+  height: 150px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px dashed #999;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+input[type="file"]{
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+
+.draging{
+  transform: scale(1.1);
+}
+
+.dragBox i{
+  color: #999;
+  font-size: 2rem;
+}
+
+#preview{
+  text-align: center;
+  padding: 2rem 0;
+}
+
+#preview img{
+  width: auto;
+  height: 300px;
+}
